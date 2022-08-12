@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;900&display=swap');
+
+body {
+    background-image: url(/background.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #0f141e;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: rgb(16, 8, 124);
+    font-size: 50px;
+    letter-spacing: 5px;
+    border-bottom: 3px rgb(19, 11, 136) dashed;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+@media(max-width: 650px) {
+    .info {
+        display: block;
+        text-align: center;
+    }
+
+}
+.info img {
+border-radius: 20px;
+box-shadow: 13px 12px 18px 0px rgb(0 0 0 / 25%);
+}
+
+.info .info-text{
+    margin: 20px 20px;
+}
+
+.info h1 {
+margin: 20px 0 50px 0;
+font-size: 35px;
+}
+
+.info .info-text p {
+    font-style: italic;
+    font-weight: bold; 
+    margin: 2px;
+}
+
+.info .info-text h3 {
+    margin: 50px 0 0;
+}
+
+.social_networks a {
+    color: rgb(16, 5, 117);
+    font-weight: bold;
+    text-decoration: none; 
+}
+
+.social_networks a:visited {
+    color: rgb(128, 126, 127);
+}
+
+.social_networks a:hover {
+    color:blue;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.social_networks a:active {
+    color: rgb(2, 92, 2);
+}
+
+.hobby {
+    min-height: 100px;
+    background: rgb(197, 223, 238);
+    border:rgb(16, 8, 124) solid 1px;
+    border-radius: 20px;
+    padding-left: 15px;
+}
+.hobby ol {
+    padding-left: 15px;
+}
+
+.hobby li {
+    margin-bottom: 10px;
+}
+
+.my_work {
+    min-height: 100px;
+    padding: 0 15px 15px;
+    background: rgb(197, 238, 221);
+    border:rgb(8, 124, 27) solid 1px;
+    border-radius: 20px; 
+}
+
+.my_work table {
+    width: 100%;
+    text-align: left;
+}
+@media(max-width:405px) {
+    .my_work {
+        padding: 0 5px 15px;  
+    }
+    .my_work table {
+        font-size:smaller;
+    }
+    .my_work td, th{
+        padding: 5px;
+    }
+}
+
+.my_work td {
+    padding: 10px;
+}
+
+.my_work th {
+    background: rgb(135, 201, 141);
+    padding: 10px;
+}
+
+.my_work table tr:nth-child(even) {
+    background: rgb(135, 201, 141);
+}
+
+.my_work table tr:hover {
+    background: rgb(4, 92, 11);
+    color: aliceblue;
+}
+
+.contacts h2 {
+    text-align: center;
+}
+
+.text_email {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text_email .text, .email, .message  {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    min-width: 250px;
+}
+@media(max-width:550px){
+    .text_email{
+        display: block;
+        width: 100px;
+    }
+}
+
+.contacts label {
+    margin-bottom: 10px;
+}
+
+.contacts input, textarea {
+    margin-bottom: 10px;
+    background: transparent;
+    min-height: 30px;
+    border:none;
+    border-bottom:#8ea2c9 1px solid;
+    outline: none;
+}
+
+.btn {
+    background:#032a77;
+    color:aliceblue;
+    padding: 15px 20px;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: bold;
+}

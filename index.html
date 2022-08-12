@@ -4,79 +4,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Savitski Resume</title>
     <meta name="kewords" content="cv, savitski, frontend, developer">
     <meta name="description" content="Портфолио Николая Савицкого">
     <meta name="author" content="Savitski_Mikalai">
-
+    <title>Savitski Resume</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img src="https://img.hhcdn.ru/photo/694676604.jpeg?t=1659442602&h=JirX-pS20MhqsbbiTW5FwA" alt="мое фото">
-    <h1>Николай Савицкий</h1>
-    <p>Я начинающий Frontend разработчик <strong>javascript.</strong></p>
-    <p>Я люблю <em>программировать</em>, заниматься <em>спортом</em>, изучаю <em>финансовые рынки.</em></p>
-    <p>Моя цель - стать <em>junior Frontend</em> разработчиком за <strong>6 месяцев</strong></p>
-    <a target="_blank" href="https://t.me/Nick_Sova">Мой телеграм</a> &#10073; 
-    <a target="_blank" href="https://www.youtube.com/channel/UC9ZxjB679femTwo05xNis_A"> Мой youtube канал</a>
-
-    <hr>
-
-    <h2>Мои хобби</h2>
-    <ol>
-        <li>Программирование</li>
-        <li>Английский</li>
-        <li>Музыка</li>
-        <li>Психология</li>
-        <li>Рукопашный бой</li>
-    </ol>
-
-    <hr>
-    
-    <h2>Мой опыт работы</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Работа</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>военная служба</td>
-                <td>офицер</td>
-                <td>2002-2013</td>
-            </tr>
-            <tr>
-                <td>София фрут</td>
-                <td>директор</td>
-                <td>2013-2015</td>
-            </tr>
-            <tr>
-                <td>Индивидуальный предприниматель</td>
-                <td>ИП</td>
-                <td>2015-Н.время</td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-    <h2>Связаться со мной</h2>
-    <form>
-        <div>  
-            <label for="text" >Ваше имя</label>
-            <input type="text" id="text" placeholder="Введите имя">
+    <div class="container">
+        <div class="info">
+            <img src="https://img.hhcdn.ru/photo/694676604.jpeg?t=1660230045&h=h6jmogEuBn3YIHa_bkRVCQ" alt="мое фото">
+            <div class="info-text">
+                <h1>Николай Савицкий</h1>
+                <p>Я начинающий Frontend разработчик javascript.</p>
+                <p>Я люблю программировать, заниматься спортом, изучаю финансовые рынки.</p>
+                <p>Моя цель - стать junior Frontend разработчиком за 6 месяцев</p>
+                <div class="social_networks">
+                    <h3>Социальные сети</h3>
+                    <a target="_blank" href="https://t.me/Nick_Sova">Мой телеграм</a> 
+                    &#10073;
+                    <a target="_blank" href="https://www.youtube.com/channel/UC9ZxjB679femTwo05xNis_A"> Мой youtube канал</a>
+                </div>
+            </div>
         </div>
-        <div>
-            <label for="email">Ваш email</label>
-            <input type="email" id="email" placeholder="Введите email">
+        <hr>
+        <div class="hobby">
+            <h2>Мои хобби</h2>
+            <ol>
+                <li>Программирование</li>
+                <li>Английский</li>
+                <li>Музыка</li>
+                <li>Финансовые рынки</li>
+                <li>Рукопашный бой</li>
+            </ol>
         </div>
-            <label for="message">Ваше сообщение</label>
-            <br>
-            <textarea id="message" cols="55" rows="15" placeholder="Введите сообщение..."></textarea>
+        <hr>
+        <div class="my_work">
+            <h2>Мой опыт работы</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Работа</th>
+                        <th>Должность</th>
+                        <th>Год</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>военная служба</td>
+                        <td>офицер</td>
+                        <td>2002-2013</td>
+                    </tr>
+                    <tr>
+                        <td>ЧП София фрут</td>
+                        <td>директор</td>
+                        <td>2013-2015</td>
+                    </tr>
+                    <tr>
+                        <td>ЧП Удушлу</td>
+                        <td>заместитель директора</td>
+                        <td>2015-2016</td>
+                    </tr>
+                    <tr>
+                        <td>Индивидуальный предприниматель</td>
+                        <td>ИП</td>
+                        <td>2016-Н.время</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
         <br>
-        <input type="submit" value="Отправить">        
-    </form>
-   
+        <div class="contacts">
+            <h2>Связаться со мной</h2>
+            <form>
+                <div class="text_email">
+                    <div class="text">  
+                        <label for="text" >Ваше имя</label>
+                        <input type="text" id="text" placeholder="Введите имя">
+                    </div>
+                    <div class="email">
+                        <label for="email">Ваш email</label>
+                        <input type="email" id="email" placeholder="Введите email">
+                    </div>
+                </div>
+                <div class="message">
+                    <label for="message">Ваше сообщение</label>
+                    <textarea id="message" rows="10" placeholder="Введите сообщение..."></textarea>
+                </div>
+                <br>
+                <button class="btn">Отправить</button>       
+            </form>
+        </div>
+    </div>
 </body>
 </html>
